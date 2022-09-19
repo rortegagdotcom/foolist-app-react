@@ -1,0 +1,17 @@
+.foolist-button {
+  background-color: transparent;
+  font-weight: 500;
+  color: #444;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0.1rem 0.1rem 0.5rem #aaa, inset -0.1rem -0.1rem 0.5rem #aaa;
+}
+
+.foolist-button:active {
+  box-shadow: inset 0.25rem 0.25rem 0.5rem #ccc,
+    inset -2.5rem -0.25rem 0.5rem #fff;
+}

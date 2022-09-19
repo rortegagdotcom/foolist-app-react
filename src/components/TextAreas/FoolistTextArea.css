@@ -1,0 +1,12 @@
+textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  color: #444;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 0.25rem 0.25rem 0.5rem #ccc,
+    inset -2.5rem -0.25rem 0.5rem #fff;
+}

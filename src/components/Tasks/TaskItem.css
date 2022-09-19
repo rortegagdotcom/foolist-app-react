@@ -1,0 +1,33 @@
+.task-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-weight: 500;
+  color: #444;
+  font-size: 1rem;
+  padding: 0.25rem;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.task-item:hover {
+  border: 1px solid #444;
+  transition: 0.5s;
+}
+
+.container {
+  padding: 0.125rem 1rem;
+}
+
+.container p {
+  word-break: break-all;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
