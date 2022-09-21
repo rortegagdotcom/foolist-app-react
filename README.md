@@ -27,9 +27,9 @@ La app está lista para ser desplegada.
 
 El projecto de la app, contiene los siguientes dependecias.
 
-*Axios
-*React DOM
-*React Router DOM
-*React Toastify
-*Typescript
-*use-sound
+* Axios
+* React DOM
+* React Router DOM
+* React Toastify
+* Typescript
+* use-sound
