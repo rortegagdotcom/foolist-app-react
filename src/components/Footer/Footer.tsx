@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; Copyright 2022</p>
+      <a href="https://rortegag.com">rortegag.com</a>
     </footer>
   );
 };

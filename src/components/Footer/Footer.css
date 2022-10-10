@@ -6,6 +6,19 @@ footer {
   padding-bottom: 0.5rem;
 }
 
-footer p {
-  text-align: center;
+footer a {
+  display: flex;
+  justify-content: center;
+}
+
+footer a:link {
+  color: black;
+}
+
+footer a:visited {
+  color: black;
+}
+
+footer a:hover {
+  color: #555;
 }
