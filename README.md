@@ -3,7 +3,7 @@
 Este projecto se trata de una webapp para crear una lista de tareas sencilla.
 Creado con React+Typescript.
 
-La App utiliza su propia API sencilla para las tareas.
+La App utiliza su propia API sencilla para las tareas: [https://github.com/r-ortegag/foolist-api](https://github.com/r-ortegag/foolist-api)
 
 ## Scripts
 
