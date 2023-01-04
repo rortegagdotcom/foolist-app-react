@@ -29,6 +29,7 @@ const TaskForm = () => {
   };
 
   const [task, setTask] = useState<Task>(initialState);
+  const [cancelled, setCancelled] = useState(false);
 
   const handleInputChange = (e: InputChange) => {
     setTask({ ...task, [e.target.name]: e.target.value });
@@ -37,16 +38,17 @@ const TaskForm = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!params.id) {
-      await taskService.createTask(task);
-      toast.success("New task added");
-      setTask(initialState);
-    } else {
-      await taskService.updateTask(params.id, task);
-      toast.success("Update task succesfully");
-      setTask(initialState);
+    if(!cancelled) {
+      if (!params.id) {
+        await taskService.createTask(task);
+        toast.success("New task added");
+        setTask(initialState);
+      } else {
+        await taskService.updateTask(params.id, task);
+        toast.success("Update task succesfully");
+        setTask(initialState);
+      }
     }
-
     navigate("/");
   };
 
@@ -91,7 +93,7 @@ const TaskForm = () => {
           <FoolistButton onClick={() => play()}>
             <img src={icons[3].img} alt={icons[3].alt} width={20} />
           </FoolistButton>
-          <FoolistButton onClick={() => play()}>
+          <FoolistButton onClick={() => {setCancelled(true); play()}}>
             <img src={icons[4].img} alt={icons[4].alt} width={20} />
           </FoolistButton>
         </div>
