@@ -1,19 +1,19 @@
-import React, { ChangeEvent, FormEvent, useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { toast } from "react-toastify";
-import useSound from "use-sound";
+import React, { ChangeEvent, FormEvent, useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import useSound from 'use-sound';
 
-import { Task } from "../../models/Task";
-import * as taskService from "../../services/TaskService";
+import { Task } from '../../models/Task';
+import * as taskService from '../../services/TaskService';
 
-import popSFX from "../Buttons/pop.mp3";
-import FoolistButton from "../Buttons/FoolistButton";
-import FoolistInput from "../Inputs/FoolistInput";
-import FoolistTextArea from "../TextAreas/FoolistTextArea";
+import popSFX from '../Buttons/pop.mp3';
+import FoolistButton from '../Buttons/FoolistButton';
+import FoolistInput from '../Inputs/FoolistInput';
+import FoolistTextArea from '../TextAreas/FoolistTextArea';
 
-import icons from "../../assets/img/icons";
+import icons from '../../assets/img/icons';
 
-import "./TaskForm.css";
+import './TaskForm.css';
 
 type InputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
 
@@ -24,8 +24,8 @@ const TaskForm = () => {
   const [play] = useSound(popSFX);
 
   const initialState = {
-    name: "",
-    description: "",
+    name: '',
+    description: '',
   };
 
   const [task, setTask] = useState<Task>(initialState);
@@ -38,18 +38,18 @@ const TaskForm = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if(!cancelled) {
+    if (!cancelled) {
       if (!params.id) {
         await taskService.createTask(task);
-        toast.success("New task added");
+        toast.success('New task added');
         setTask(initialState);
       } else {
         await taskService.updateTask(params.id, task);
-        toast.success("Update task succesfully");
+        toast.success('Update task succesfully');
         setTask(initialState);
       }
     }
-    navigate("/");
+    navigate('/');
   };
 
   const getTask = async (id: string) => {
@@ -93,7 +93,12 @@ const TaskForm = () => {
           <FoolistButton onClick={() => play()}>
             <img src={icons[3].img} alt={icons[3].alt} width={20} />
           </FoolistButton>
-          <FoolistButton onClick={() => {setCancelled(true); play()}}>
+          <FoolistButton
+            onClick={() => {
+              setCancelled(true);
+              play();
+            }}
+          >
             <img src={icons[4].img} alt={icons[4].alt} width={20} />
           </FoolistButton>
         </div>

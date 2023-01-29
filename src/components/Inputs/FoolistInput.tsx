@@ -1,6 +1,6 @@
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent } from 'react';
 
-import "./FoolistInput.css";
+import './FoolistInput.css';
 
 interface Props {
   type: string;

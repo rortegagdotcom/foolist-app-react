@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./FoolistButton.css";
+import './FoolistButton.css';
 
 interface Props {
   children?: React.ReactNode;

@@ -1,17 +1,17 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import useSound from "use-sound";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import useSound from 'use-sound';
 
-import { Task } from "../../models/Task";
-import * as taskService from "../../services/TaskService";
+import { Task } from '../../models/Task';
+import * as taskService from '../../services/TaskService';
 
-import FoolistButton from "../Buttons/FoolistButton";
-import popSFX from "../Buttons/pop.mp3";
+import FoolistButton from '../Buttons/FoolistButton';
+import popSFX from '../Buttons/pop.mp3';
 
-import icons from "../../assets/img/icons";
+import icons from '../../assets/img/icons';
 
-import "./TaskItem.css";
+import './TaskItem.css';
 
 interface Props {
   task: Task;
@@ -32,7 +32,7 @@ const TaskItem = ({ task, loadTasks }: Props) => {
     play();
     await taskService.deleteTask(id);
     loadTasks();
-    toast.success("Task is deleted");
+    toast.success('Task is deleted');
   };
 
   return (

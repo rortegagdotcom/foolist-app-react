@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios from 'axios';
 
-import { Task } from "../models/Task";
+import { Task } from '../models/Task';
 
-const API = "http://localhost:4000";
+const API = 'http://localhost:4000';
 
 export const getTasks = async () => {
   return await axios.get<Task[]>(`${API}/tasks`);

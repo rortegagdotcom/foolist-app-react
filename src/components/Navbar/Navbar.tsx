@@ -1,13 +1,13 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import useSound from "use-sound";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import useSound from 'use-sound';
 
-import FoolistButton from "../Buttons/FoolistButton";
-import "./Navbar.css";
+import FoolistButton from '../Buttons/FoolistButton';
+import './Navbar.css';
 
-import icons from "../../assets/img/icons";
+import icons from '../../assets/img/icons';
 
-import popSFX from "../Buttons/pop.mp3";
+import popSFX from '../Buttons/pop.mp3';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const routeNewTask = () => {
     play();
-    navigate("/new_task");
+    navigate('/new_task');
   };
 
   return (

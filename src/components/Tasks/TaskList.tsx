@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import { Task } from "../../models/Task";
-import * as taskService from "../../services/TaskService";
+import { Task } from '../../models/Task';
+import * as taskService from '../../services/TaskService';
 
-import TaskItem from "./TaskItem";
+import TaskItem from './TaskItem';
 
-import "./TaskList.css";
+import './TaskList.css';
 
 const TaskList = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

@@ -1,18 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import Header from "./components/Header/Header";
-import TaskList from "./components/Tasks/TaskList";
-import TaskForm from "./components/Tasks/TaskForm";
-import Footer from "./components/Footer/Footer";
+import Header from './components/Header/Header';
+import TaskList from './components/Tasks/TaskList';
+import TaskForm from './components/Tasks/TaskForm';
+import Footer from './components/Footer/Footer';
 
-import "./index.css";
+import './index.css';
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+  document.getElementById('root') as HTMLElement
 );
 
 root.render(
