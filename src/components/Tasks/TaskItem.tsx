@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useSound from 'use-sound';
@@ -7,9 +6,9 @@ import { Task } from '../../models/Task';
 import * as taskService from '../../services/TaskService';
 
 import FoolistButton from '../Buttons/FoolistButton';
-import popSFX from '../Buttons/pop.mp3';
 
 import icons from '../../assets/img/icons';
+import popSFX from '../../assets/sounds/pop.mp3';
 
 import './TaskItem.css';
 

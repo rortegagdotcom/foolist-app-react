@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState, useEffect } from 'react';
+import { ChangeEvent, FormEvent, useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useSound from 'use-sound';
@@ -6,12 +6,12 @@ import useSound from 'use-sound';
 import { Task } from '../../models/Task';
 import * as taskService from '../../services/TaskService';
 
-import popSFX from '../Buttons/pop.mp3';
 import FoolistButton from '../Buttons/FoolistButton';
 import FoolistInput from '../Inputs/FoolistInput';
 import FoolistTextArea from '../TextAreas/FoolistTextArea';
 
 import icons from '../../assets/img/icons';
+import popSFX from '../../assets/sounds/pop.mp3';
 
 import './TaskForm.css';
 

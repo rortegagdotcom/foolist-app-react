@@ -1,13 +1,12 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useSound from 'use-sound';
 
 import FoolistButton from '../Buttons/FoolistButton';
-import './Navbar.css';
 
 import icons from '../../assets/img/icons';
+import popSFX from '../../assets/sounds/pop.mp3';
 
-import popSFX from '../Buttons/pop.mp3';
+import './Navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
