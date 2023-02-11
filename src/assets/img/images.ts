@@ -1,9 +1,9 @@
-import foolistLogo from "./foolist-logo.png";
+import foolistLogo from './foolist-logo.png';
 
 const images = [
   {
     img: foolistLogo,
-    alt: "Foolist Logo",
+    alt: 'Foolist Logo',
   },
 ];
 
